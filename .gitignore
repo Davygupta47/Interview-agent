@@ -1,2 +1,12 @@
 Plan.md
 Plan2.md
+README.md
+node_modules/
+dist/
+.env
+venv/
+__pycache__/
+*.pyc
+backend/Procfile
+backend/.dockerignore
+backend/Dockerfile

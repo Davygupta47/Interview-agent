@@ -1,0 +1,62 @@
+{
+  "session_id": "demo01",
+  "topic": "Why I avoided posting videos on LinkedIn for 2 years",
+  "target_duration": "60 seconds",
+  "interview": [
+    {
+      "speaker": "interviewer",
+      "text": "When you think about hitting record on a video, what is the very first feeling that comes up?",
+      "question_type": "opening",
+      "reason": "Need to surface the raw emotional barrier before exploring specifics."
+    },
+    {
+      "speaker": "user",
+      "text": "Honestly, a kind of dread. I know I will hate how I sound.",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Is it more about how you sound, or what people will think of what you actually say?",
+      "question_type": "follow_up",
+      "reason": "Isolating which fear is dominant — voice insecurity vs judgment of ideas."
+    },
+    {
+      "speaker": "user",
+      "text": "Mostly what people will think. I worry my ideas are not polished enough.",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Has there been a moment when that fear stopped you from posting something you had already prepared?",
+      "question_type": "follow_up",
+      "reason": "Looking for a concrete story to anchor the fear."
+    },
+    {
+      "speaker": "user",
+      "text": "Yes. I recorded a 90-second video for our product launch. Watched it back three times and deleted it.",
+      "answer_source": "mic_transcription"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "What was going through your head as you watched it back?",
+      "question_type": "follow_up",
+      "reason": "Need the inner monologue — the self-talk that drives avoidance."
+    },
+    {
+      "speaker": "user",
+      "text": "I kept thinking: this is not good enough. Other people post perfectly scripted things and I look like I am rambling.",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "What eventually made you decide to start posting anyway?",
+      "question_type": "closing",
+      "reason": "Need the turning point for a positive arc — what shifted the calculus."
+    },
+    {
+      "speaker": "user",
+      "text": "A founder I respect posted a rough video and got ten times the engagement of their polished ones. I realised the rawness was the point.",
+      "answer_source": "typed"
+    }
+  ]
+}

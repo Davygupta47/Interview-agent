@@ -1,0 +1,26 @@
+{
+  "target_duration": "60 seconds",
+  "short_video_script": "For two years I avoided posting videos. Not because I had nothing to say. Because I was afraid my ideas were not polished enough.\n\nI once recorded a 90-second video for our product launch. Watched it back three times. Then deleted it.\n\nI kept comparing myself to people with perfectly scripted content. Every time I decided: not yet.\n\nThen a founder I respect posted a rough, unscripted video. It got ten times the engagement of their polished ones. The rawness was the point.\n\nIf you have been waiting to feel ready — you do not need to be polished. You need to be real.",
+  "word_count": 104,
+  "estimated_seconds": 57,
+  "selected_moments": [
+    {
+      "source_text": "I kept thinking: this is not good enough.",
+      "reason": "Captures the inner critic — most viewers feel this but never say it aloud."
+    },
+    {
+      "source_text": "I recorded a 90-second video for our product launch... and deleted it.",
+      "reason": "Concrete story — makes the fear tangible, not abstract."
+    },
+    {
+      "source_text": "A founder I respect posted a rough video and got ten times the engagement.",
+      "reason": "The turning point — gives the audience a reason to act differently."
+    }
+  ],
+  "discarded_moments": [
+    {
+      "source_text": "I know I will hate how I sound.",
+      "reason": "Weaker than the 'not polished enough' fear — the more universal angle was used instead."
+    }
+  ]
+}
