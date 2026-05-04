@@ -75,13 +75,13 @@ def _call_sync(system: str, user: str) -> str:
                 {"role": "user",   "content": user},
             ],
             temperature=0.7,
-            max_tokens=600,
+            max_tokens=1200,
         )
         return res.choices[0].message.content.strip()
 
     model = _CLIENT.GenerativeModel(
         "gemini-2.5-flash-lite",
-        generation_config={"temperature": 0.7, "max_output_tokens": 600},
+        generation_config={"temperature": 0.7, "max_output_tokens": 1200},
     )
     res = model.generate_content(
         f"SYSTEM INSTRUCTIONS:\n{system}\n\nUSER REQUEST:\n{user}"

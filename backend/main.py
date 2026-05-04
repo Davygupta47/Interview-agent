@@ -101,12 +101,17 @@ class StartReq(BaseModel):
     video_goal: str = Field(default="", max_length=500)
     tone: str = Field(default="natural, honest, conversational", max_length=200)
     target_duration: str = Field(default="60 seconds", max_length=50)
+    interview_mode: str = Field(
+        default="text",
+        description="Interview input mode: 'voice' or 'text'",
+        max_length=10,
+    )
 
 
 class AnswerReq(BaseModel):
     """User's answer to the current interview question."""
     session_id: str = Field(..., min_length=1, max_length=50)
-    user_answer: str = Field(..., min_length=1, max_length=5000)
+    user_answer: str = Field(..., min_length=1, max_length=10000)
     answer_source: str = Field(
         default="typed",
         description="typed | mic_transcription",
