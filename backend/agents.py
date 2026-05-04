@@ -42,7 +42,7 @@ def _init() -> None:
         _CLIENT_TYPE = "gemini"
         _CLIENT = genai
         _INITIALIZED = True
-        logger.info("LLM provider: Gemini (gemini-2.0-flash)")
+        logger.info("LLM provider: Gemini (gemini-2.5-flash-lite)")
         return
 
     raise RuntimeError(
@@ -80,7 +80,7 @@ def _call_sync(system: str, user: str) -> str:
         return res.choices[0].message.content.strip()
 
     model = _CLIENT.GenerativeModel(
-        "gemini-2.0-flash",
+        "gemini-2.5-flash-lite",
         generation_config={"temperature": 0.7, "max_output_tokens": 600},
     )
     res = model.generate_content(

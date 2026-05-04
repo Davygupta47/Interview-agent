@@ -3,7 +3,7 @@ Plan2.md
 README.md
 node_modules/
 dist/
-.env
+backend/.env
 venv/
 __pycache__/
 *.pyc

@@ -1,0 +1,130 @@
+{
+  "target_duration": "30 seconds",
+  "short_video_script": "I was hesitant to post videos on LinkedIn, fearing negative comments and being judged. I thought my knowledge might seem limited. But I started learning from scratch, doing project-based learning, and now I've got a little reach on LinkedIn. My message is: don't be afraid, just start.",
+  "word_count": 64,
+  "estimated_seconds": 26,
+  "selected_moments": [
+    {
+      "source_text": "maybe negative comments",
+      "reason": "This shows the user's initial fear and hesitation"
+    },
+    {
+      "source_text": "started learning from scratch and project based learning",
+      "reason": "This highlights the user's solution to overcoming their fear"
+    },
+    {
+      "source_text": "i have got a lil reach in Linkedln now",
+      "reason": "This provides a sense of accomplishment and progress"
+    }
+  ],
+  "discarded_moments": [
+    {
+      "source_text": "it was me who entered into tech field so wanted just get aware of how to be interactive in tech culture?",
+      "reason": "Too vague and doesn't add much to the main story"
+    },
+    {
+      "source_text": "yes, when i was back in 2nd year of my college i was unaware of many tech frameworks so i was making a video on flask",
+      "reason": "Too specific and doesn't contribute to the core message"
+    },
+    {
+      "source_text": "hi",
+      "reason": "Irrelevant and doesn't add any value to the story"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "interviewer",
+      "text": "What was going through your mind when you first considered posting videos on LinkedIn two years ago?",
+      "question_type": "opening",
+      "reason": "Inviting the user to share their initial thoughts and feelings about the topic"
+    },
+    {
+      "speaker": "user",
+      "text": "it was me who entered into tech field so wanted just get aware of how to be interactive in tech culture?",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Can you give me a specific moment when you felt hesitant or unsure about posting a video on LinkedIn?",
+      "question_type": "follow_up",
+      "reason": "Asking for a specific example to delve deeper into their feelings and concerns"
+    },
+    {
+      "speaker": "user",
+      "text": "yes, when i was back in 2nd year of my college i was unaware of many tech frameworks so i was making a video on flask",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "What was it about creating a video on Flask that made you feel unsure or hesitant about sharing it on LinkedIn?",
+      "question_type": "follow_up",
+      "reason": "Exploring the user's fear of being judged due to lack of knowledge or expertise"
+    },
+    {
+      "speaker": "user",
+      "text": "hi",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Let me try that a different way... What's the worst that could have happened if you had posted that video on Flask back in your 2nd year of college?",
+      "question_type": "reframe",
+      "reason": "Gently rephrasing the question to help the user open up about their fears and concerns"
+    },
+    {
+      "speaker": "user",
+      "text": "maybe negative comments",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "That's a very common fear - what did you think people's negative comments would say about you or your abilities?",
+      "question_type": "follow_up",
+      "reason": "Delving deeper into the user's fear of being judged and its potential impact on their self-perception"
+    },
+    {
+      "speaker": "user",
+      "text": "maybe my knowledge will be short",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Did you feel like your knowledge being perceived as limited would reflect poorly on you as a professional, or was there something else at stake for you?",
+      "question_type": "follow_up",
+      "reason": "Exploring the user's fear of being judged and its potential impact on their professional identity"
+    },
+    {
+      "speaker": "user",
+      "text": "bit hesitant",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "That's a very honest way to put it - can you tell me what finally changed for you, making you feel more comfortable about posting videos on LinkedIn now?",
+      "question_type": "follow_up",
+      "reason": "Exploring what helped the user overcome their fear and hesitation"
+    },
+    {
+      "speaker": "user",
+      "text": "started learning from scratch and project based learning",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "How do you think your experience of overcoming your initial hesitation will help others who might be feeling similarly unsure about sharing their own content on LinkedIn?",
+      "question_type": "follow_up",
+      "reason": "Asking the user to reflect on the value of their experience and how it can be applied to others"
+    },
+    {
+      "speaker": "user",
+      "text": "i have got a lil reach in Linkedln now",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "What message do you hope people take away from your story of overcoming your fears and starting to post videos on LinkedIn?",
+      "question_type": "closing",
+      "reason": "Helping the user to distill the key takeaway from their experience and share it with the audience"
+    }
+  ]
+}
