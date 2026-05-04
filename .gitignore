@@ -10,3 +10,4 @@ __pycache__/
 backend/Procfile
 backend/.dockerignore
 backend/Dockerfile
+sample
