@@ -4,7 +4,7 @@ import { createMic } from '../speech'
 import { speakText, cancelSpeech, isTTSSupported } from '../tts'
 
 
-export default function Interview({ session, onComplete }) {
+export default function Interview({ session, onComplete, onExit }) {
   const { session_id, first_question, config } = session
   const isVoiceMode = config.interview_mode === 'voice'
 
@@ -180,6 +180,14 @@ export default function Interview({ session, onComplete }) {
   const maxTurns = 15
   const progressPercent = Math.min((turnCount / maxTurns) * 100, 100)
 
+  const handleExit = () => {
+    cancelSpeech()
+    if (micRef.current) {
+      try { micRef.current.stop() } catch {}
+    }
+    if (onExit) onExit()
+  }
+
   return (
     <div className="interview-layout fade-in">
       {/* Header */}
@@ -208,6 +216,19 @@ export default function Interview({ session, onComplete }) {
               style={{ width: `${progressPercent}%` }}
             />
           </div>
+          <button
+            type="button"
+            className="btn-exit"
+            onClick={handleExit}
+            title="Exit interview"
+            id="btn-exit-interview"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+            Exit
+          </button>
         </div>
       </header>
 

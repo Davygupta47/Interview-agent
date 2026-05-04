@@ -473,6 +473,29 @@ button {
   transition: width 0.5s ease;
 }
 
+/* Exit button */
+.btn-exit {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xs);
+  color: var(--text-3);
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 4px;
+}
+.btn-exit:hover {
+  border-color: var(--red);
+  color: var(--red);
+  background: var(--red-soft);
+}
+
 /* Transcript */
 .transcript-scroll {
   flex: 1;
