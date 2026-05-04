@@ -1,6 +1,5 @@
 Plan.md
 Plan2.md
-README.md
 node_modules/
 dist/
 backend/.env
@@ -10,4 +9,4 @@ __pycache__/
 backend/Procfile
 backend/.dockerignore
 backend/Dockerfile
-samples
+samples/
