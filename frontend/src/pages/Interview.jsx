@@ -185,7 +185,8 @@ export default function Interview({ session, onComplete, onExit }) {
     if (micRef.current) {
       try { micRef.current.stop() } catch {}
     }
-    if (onExit) onExit()
+    // Pass session_id so App can fetch transcript and generate script
+    if (onExit) onExit(session_id)
   }
 
   return (

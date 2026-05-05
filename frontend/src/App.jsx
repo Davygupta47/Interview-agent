@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react'
+import { getTranscript } from './api'
 import Setup from './pages/Setup'
 import Interview from './pages/Interview'
 import Script from './pages/Script'
@@ -28,6 +29,26 @@ export default function App() {
     setScriptData(null)
   }, [])
 
+  /**
+   * Early exit: fetch whatever transcript exists so far
+   * and go to the Script page to generate a script from it.
+   */
+  const handleEarlyExit = useCallback(async (sessionId) => {
+    try {
+      const data = await getTranscript(sessionId)
+      setTranscript(data.interview || [])
+      setScriptData(null)
+      setPage('script')
+    } catch (err) {
+      console.error('Failed to fetch transcript on exit:', err)
+      // Fallback: still go to script page, the Script component
+      // will try to generate from whatever the backend has
+      setTranscript([])
+      setScriptData(null)
+      setPage('script')
+    }
+  }, [])
+
   return (
     <div className="app">
       <div className="bg-glow bg-glow--1" aria-hidden="true" />
@@ -41,7 +62,7 @@ export default function App() {
         <Interview
           session={session}
           onComplete={handleInterviewComplete}
-          onExit={handleRestart}
+          onExit={handleEarlyExit}
         />
       )}
 
