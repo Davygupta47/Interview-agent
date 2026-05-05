@@ -41,6 +41,7 @@ export default function App() {
         <Interview
           session={session}
           onComplete={handleInterviewComplete}
+          onExit={handleRestart}
         />
       )}
 

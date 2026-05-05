@@ -23,6 +23,7 @@ export default function Setup({ onStart }) {
     video_goal: '',
     tone: TONES[0],
     target_duration: DURATIONS[1],
+    interview_mode: 'text',
   })
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
@@ -65,13 +66,61 @@ export default function Setup({ onStart }) {
           <span className="gradient-text"> video-ready script</span>
         </h1>
         <p className="setup-subtitle">
-          Answer a few AI-driven questions. Get a polished script that sounds like <em>you</em> — 
-          not like a chatbot wrote it.
+          A podcast-style AI interviewer that makes you <em>think and feel</em> —
+          then distills your best moments into a polished script.
         </p>
       </header>
 
       {/* Form Card */}
       <form className="card glass-card" onSubmit={submit} id="setup-form">
+
+        {/* ─── Interview Mode Selector ─── */}
+        <div className="form-group">
+          <label className="form-label">Interview Mode</label>
+          <div className="mode-selector">
+            <button
+              type="button"
+              className={`mode-card ${form.interview_mode === 'voice' ? 'mode-card--active' : ''}`}
+              onClick={() => setForm((prev) => ({ ...prev, interview_mode: 'voice' }))}
+              id="mode-voice"
+            >
+              <span className="mode-card__icon">🎙️</span>
+              <span className="mode-card__title">Voice Interview</span>
+              <span className="mode-card__desc">
+                AI speaks questions aloud.
+                You respond with your mic.
+              </span>
+              {form.interview_mode === 'voice' && (
+                <span className="mode-card__check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+              )}
+            </button>
+            <button
+              type="button"
+              className={`mode-card ${form.interview_mode === 'text' ? 'mode-card--active' : ''}`}
+              onClick={() => setForm((prev) => ({ ...prev, interview_mode: 'text' }))}
+              id="mode-text"
+            >
+              <span className="mode-card__icon">⌨️</span>
+              <span className="mode-card__title">Text Interview</span>
+              <span className="mode-card__desc">
+                Read questions on screen.
+                Type your answers.
+              </span>
+              {form.interview_mode === 'text' && (
+                <span className="mode-card__check">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+              )}
+            </button>
+          </div>
+        </div>
+
         {/* Topic */}
         <div className="form-group">
           <label htmlFor="input-topic" className="form-label">
@@ -195,7 +244,10 @@ export default function Setup({ onStart }) {
           <span>🎙️</span> Voice or text input
         </div>
         <div className="feature-chip">
-          <span>🤖</span> Adaptive AI questions
+          <span>🎧</span> AI speaks questions aloud
+        </div>
+        <div className="feature-chip">
+          <span>🤖</span> Podcast-style deep questions
         </div>
         <div className="feature-chip">
           <span>📝</span> Instant script output
