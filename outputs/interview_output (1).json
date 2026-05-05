@@ -1,0 +1,93 @@
+{
+  "target_duration": "30 seconds",
+  "short_video_script": "I struggled with dynamic programming, especially when solving LeetCode problems. My rating kept decreasing in the contest, and it was tough. But I learned to pay more attention to recursive problems before diving into dynamic programming.",
+  "word_count": 65,
+  "estimated_seconds": 26,
+  "selected_moments": [
+    {
+      "source_text": "dynamic programming",
+      "reason": "It's the user's initial response and a key challenge"
+    },
+    {
+      "source_text": "my rating keeps decreasing in the leetcode contest",
+      "reason": "It's a specific, emotional moment that illustrates the user's struggle"
+    },
+    {
+      "source_text": "pay more attention to recursive problems before going in the dynamic programming",
+      "reason": "It's a concrete takeaway from the user's experience"
+    }
+  ],
+  "discarded_moments": [
+    {
+      "source_text": "absolutely",
+      "reason": "It's too brief and doesn't add much to the narrative"
+    },
+    {
+      "source_text": "solving leetcode problems",
+      "reason": "It's already implied in the context of dynamic programming and LeetCode contests"
+    }
+  ],
+  "transcript": [
+    {
+      "speaker": "interviewer",
+      "text": "What do you think is the most challenging part of learning data structures and algorithms for someone who's just starting out?",
+      "question_type": "opening",
+      "reason": "Inviting the user to share their thoughts on the topic in a non-threatening way"
+    },
+    {
+      "speaker": "user",
+      "text": "dynamic programming",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "Can you give me a specific moment when you found dynamic programming particularly difficult to grasp?",
+      "question_type": "follow_up",
+      "reason": "Asking for a specific example to understand the user's experience with dynamic programming"
+    },
+    {
+      "speaker": "user",
+      "text": "solving leetcode problems",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "What was it about solving LeetCode problems that made dynamic programming feel especially challenging for you?",
+      "question_type": "follow_up",
+      "reason": "Digging deeper into the user's experience with dynamic programming and LeetCode problems to understand their thought process"
+    },
+    {
+      "speaker": "user",
+      "text": "my rating keeps decreasing in the leetcode contest",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "How did you feel when you saw your rating decreasing in the LeetCode contest, and did that affect your motivation to continue practicing dynamic programming?",
+      "question_type": "follow_up",
+      "reason": "Exploring the emotional impact of the experience on the user's motivation and perception of dynamic programming"
+    },
+    {
+      "speaker": "user",
+      "text": "absolutely",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "That's a tough spot to be in, what did you learn from that experience that you think could help others who are struggling with dynamic programming and feeling discouraged by their performance in LeetCode contests?",
+      "question_type": "follow_up",
+      "reason": "Exploring what the user learned from the experience and how they can use that to help others"
+    },
+    {
+      "speaker": "user",
+      "text": "pay more attention to recursive problems before going in the dynamic programming",
+      "answer_source": "typed"
+    },
+    {
+      "speaker": "interviewer",
+      "text": "That's a valuable insight, what message would you like to convey to freshers who are just starting out with data structures and algorithms, and may be facing similar struggles with dynamic programming?",
+      "question_type": "closing",
+      "reason": "Asking the user to summarize their key takeaway and message for the target audience"
+    }
+  ]
+}
